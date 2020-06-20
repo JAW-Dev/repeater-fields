@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background: #2A2A2E;
+		}
+	</style>
+</head>
+<body>
+<form class="form" action="">
+	<table>
+		<tr class="repeatable" data-test="test">
+			<td>
+				<input type="text" class="text-field" name="input[]">
+			</td>
+		</tr>
+		<tr class="repeatable" data-test="test">
+			<td>
+				<table>
+					<tr>
+						<td>
+							<input type="text" class="text-field" name="input[]">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select class="elect-field" name="input[]">
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="repeatable" data-test="test">
+			<td>
+				<input type="checkbox" class="checkbox-field" name="input[]">
+			</td>
+		</tr>
+		<tr class="repeatable" data-test="test">
+			<td>
+				<select class="elect-field" name="input[]">
+					<option value="1">1</option>
+					<option value="2">2</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+</form>
+<script src="./../dist/index.js"></script>
+<script>
+cloneFields('.form');
+</script>
+</body>
+</html>
